@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Database server</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="chai.js"></script>
+    <script src="chai-http.js"></script>
+    <script>
+      chai.use(chaiHttp);
+    </script>
   </head>
+
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1>Database server</h1>
+    <p>See the following routes for more:</p>
   </body>
 </html>

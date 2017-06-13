@@ -6,12 +6,29 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "~1.17.1",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.3",
-    "ejs": "~2.5.6",
-    "express": "~4.15.2",
-    "morgan": "~1.8.1",
-    "serve-favicon": "~2.4.2"
-  }
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.6.8",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "jasmine-node": "^1.14.5",
+    "morgan": "^1.8.2",
+    "serve-favicon": "^2.4.3"
+  },
+  "description": "Today we will practice a tech test to demonstrate your understanding of web technologies. This is an actual tech test that was given to one of our coaches when they applied for a dev role.",
+  "main": "app.js",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "chai-http": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisjmit/database_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisjmit/database_server/issues"
+  },
+  "homepage": "https://github.com/chrisjmit/database_server#readme"
 }
