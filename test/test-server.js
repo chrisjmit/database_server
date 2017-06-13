@@ -19,8 +19,7 @@ describe('Run a server', function(){
 
   it("stores a key passed in url to memory", function(done) {
     chai.request(server)
-      .post('/')
-      .send({'name': 'Chris'})
+      .get('/set?name=chris')
       .end(function(err, res){
         res.body.SUCCESS.name.should.equal('Chris');
         done();
@@ -29,7 +28,7 @@ describe('Run a server', function(){
 
   it("returns the key value stored", function(done) {
     chai.request(server)
-    .get('/names?name=Chris')
+    .get('/set?name=Chris')
     .end(function(err, res) {
     res.body.SUCCESS.name.should.equal("Chris");
     });
